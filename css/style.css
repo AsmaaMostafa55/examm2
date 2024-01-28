@@ -1,0 +1,220 @@
+
+.loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    z-index: 999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+body{
+    overflow: hidden;
+}
+.loader {
+    position: relative;
+    width: 164px;
+    height: 164px;
+  }
+  .loader::before , .loader::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    animation: rotate 1s ease-in infinite;
+}
+.loader::after {
+  width: 20px;
+  height: 20px;
+  background-color: #FF3D00;
+  animation: rotate 1s ease-in infinite, moveY 1s ease-in infinite ;
+}
+
+@keyframes moveY {
+  0% , 100% {top: 10%}
+  45% , 55% {top: 59%}
+  60% {top: 40%}
+}
+@keyframes rotate {
+  0% { transform: translate(-50%, -100%) rotate(0deg) scale(1 , 1)}
+  25%{ transform: translate(-50%, 0%) rotate(180deg) scale(1 , 1)}
+  45% , 55%{ transform: translate(-50%, 100%) rotate(180deg) scale(3 , 0.5)}
+  60%{ transform: translate(-50%, 100%) rotate(180deg) scale(1, 1)}
+  75%{ transform: translate(-50%, 0%) rotate(270deg) scale(1 , 1)}
+  100%{ transform: translate(-50%, -100%) rotate(360deg) scale(1 , 1)}
+}
+ 
+
+/* aside */
+body{
+    background-color: black;
+}
+ .sidebar{
+
+    /* background-color: #010101; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    height: 100%;
+    width: 20%;
+    
+    }
+    #icon{
+        cursor: pointer;
+    }
+
+    #sea{
+        display: block;
+        margin: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        /* transform: translateY(250px); */
+     
+    }
+    a{
+        text-decoration: none;
+    }
+#cat{
+    display: block;
+    margin: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    /* transform: translateY(250px); */
+    }
+    #Are{
+        display: block;
+        margin: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    #Ing{
+        display: block;
+        margin: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    #con{
+        display: block;
+        margin: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+ 
+
+    .in{
+        height: 100%;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
+      justify-content: space-between;
+       padding: 25px;
+
+    }
+    .iico{
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        justify-content: space-between;
+        padding: 25px;
+        background-color: white;
+
+
+    }
+    .non{
+        display: none;
+    }
+    .side{
+        white-space: nowrap;
+        display: none;
+        background-color: rgb(0, 0, 0);
+    }
+    /* #iiicon{
+        display: block;
+    } */
+/* cardsbody */
+
+.dd{
+    position: relative;
+    overflow: hidden;
+    background-color: aqua;
+    border-radius: 15px;
+
+}
+
+.ite{
+    /* height: 60px; */
+    background-color: rgba(230, 227, 232,0.5);
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 1s top ease-in-out;
+    display: flex;
+    align-items: center;
+}
+.dd:hover .ite{
+    top: 0;
+}
+/* search page*/
+.sea{
+    background-color: rgb(0, 0, 0);
+}
+
+.form-control{
+    background-color: black;
+    
+}
+::placeholder {
+    color: grey!important;
+    opacity: 1; /* Firefox */
+  }
+
+
+
+
+  .dde{
+    position: relative;
+    overflow: hidden;
+    /* background-color:rgb(235, 240, 240); */
+    border-radius: 15px;
+
+}
+
+.itee{
+    /* height: 60px; */
+    background-color: rgba(254, 253, 255, 0.5);
+    position: absolute;
+    top: 150%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 1s top ease-in-out;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    font-size: 10px;
+}
+.dde:hover .itee{
+    top: 0;
+}
+.itee h1{
+    font-size: 15px;
+    text-align: center;
+}
